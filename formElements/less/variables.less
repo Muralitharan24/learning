@@ -1,0 +1,258 @@
+/*----- variables -----*/
+
+:root{
+    --accent-h : 247;
+    --accent-s : 100%;
+    --accent-l : 66%;
+    --accent-a : 1;
+    
+    --accent-color:hsl(var(--accent-h),var(--accent-s),var(--accent-l),var(--accent-a));
+} 
+
+
+[theme-type="light"]{
+    --grey0:hsla(227,30%,25%,1);
+    --grey1:hsla(227,15%,40%,1);
+    --grey2:hsla(227,10%,55%,1);
+    --grey3:hsla(227,10%,70%,1);
+    --grey4:hsla(227,10%,84%,1);
+    --grey5:hsla(227,10%,90%,1);
+    --grey6:hsla(227,10%,93%,1);
+    --grey7:hsla(227,10%,95%,1);
+    --grey8: hsla(227,10%,97%,1);
+    --grey9:hsla(227,10%,98%,1);
+    --grey10: hsla(227,10%,99%,1);
+
+    --accent-color-light1:hsla(var(--accent-h),var(--accent-s),calc(var(--accent-l) + 24%),var(--accent-a));
+    --accent-color-light2:hsla(var(--accent-h),var(--accent-s),calc(var(--accent-l) + 30%),var(--accent-a));
+    --accent-color-dark1:hsla(var(--accent-h),calc(var(--accent-s) - 25%),calc(var(--accent-l) - 10%),var(--accent-a));
+}
+
+[theme-type="dark"]{
+    --grey0:hsla(226,10%,99%,1);
+    --grey1:hsla(226,54%,88%,1);
+    --grey2:hsla(226,22%,60%,1);
+    --grey3:hsla(226,26%,51%,1);
+    --grey4:hsla(226,30%,34%,1);
+    --grey5:hsla(226,41%,24%,1);
+    --grey6:hsla(226,41%,20%,1);
+    --grey7:hsla(226,41%,17%,1);
+    --grey8:hsla(226,41%,12%,1);
+    --grey9:hsla(226,41%,10%,1);
+    --grey10:hsla(226,41%,8%,1);
+
+    --accent-color-light1:hsla(var(--accent-h),var(--accent-s),calc(var(--accent-l) + 24%),var(--accent-a));
+    --accent-color-light2:hsla(var(--accent-h),var(--accent-s),calc(var(--accent-l) + 10%),0.2);
+    --accent-color-dark1:hsla(var(--accent-h),calc(var(--accent-s) - 25%),calc(var(--accent-l) - 10%),var(--accent-a));
+}
+
+/*----- grey color style -----*/
+
+@grey0 : var(--grey0);
+@grey1 : var(--grey1);
+@grey2 : var(--grey2);
+@grey3 : var(--grey3);
+@grey4 : var(--grey4);
+@grey5 : var(--grey5);
+@grey6 : var(--grey6);
+@grey7 : var(--grey7);
+@grey8 :var(--grey8);
+@grey9 : var(--grey9);
+@grey10 :var(--grey10);
+
+/*----- grey color style -----*/
+
+/*----- blue color style -----*/
+
+@blue-h:224;
+@blue-s:77%;
+@blue-l:48%;
+@blue-a:1;
+
+/*----- blue color style -----*/
+
+/*----- red color style -----*/
+
+@red-h:355;
+@red-s:100%;
+@red-l:50%;
+@red-a:1;
+
+/*----- red color style -----*/
+
+/*----- yellow color style -----*/
+
+@yellow-h:44;
+@yellow-s:100%;
+@yellow-l:50%;
+@yellow-a:1;
+
+/*----- yellow color style -----*/
+
+/*----- green color style -----*/
+
+@green-h:142;
+@green-s:54%;
+@green-l:27%;
+@green-a:1;
+
+/*----- green color style -----*/
+
+/*----- orange color style -----*/
+
+@orange-h:39;
+@orange-s:100%;
+@orange-l:50%;
+@orange-a:1;
+
+/*----- orange color style -----*/
+
+/*---- white color style ----*/
+
+@white1:hsla(0,0%,100%,1);
+@white2:hsla(0,0%,100%,0.9);
+@white3:hsla(0,0%,100%,0.8);
+@white4:hsla(0,0%,100%,0.7);
+
+/*---- white color style ----*/
+/*---- white color style ----*/
+
+@black1:hsla(226,41%,8%,1);
+@black2:hsla(226,41%,8%,0.9);
+@black3:hsla(226,41%,8%,0.8);
+@black4:hsla(226,41%,8%,0.7);
+
+/*---- white color style ----*/
+
+@grey-bg0 : @grey0;
+@grey-bg1 : @grey1;
+@grey-bg2 : @grey2;
+@grey-bg3 : @grey3;
+@grey-bg4 : @grey4;
+@grey-bg5 : @grey5;
+@grey-bg6 : @grey6;
+@grey-bg7 : @grey7;
+@grey-bg8 : @grey8;
+@grey-bg9 : @grey9;
+@grey-bg10 : @grey10;
+
+@grey-txt0 : @grey0;
+@grey-txt1 : @grey1;
+@grey-txt2 : @grey2;
+@grey-txt3 : @grey3;
+@grey-txt4 : @grey4;
+@grey-txt5 : @grey5;
+@grey-txt6 : @grey6;
+@grey-txt7 : @grey7;
+@grey-txt8 : @grey8;
+@grey-txt9 : @grey9;
+@grey-txt10 : @grey10;
+
+@grey-bor0 : @grey0;
+@grey-bor1 : @grey1;
+@grey-bor2 : @grey2;
+@grey-bor3 : @grey3;
+@grey-bor4 : @grey4;
+@grey-bor5 : @grey5;
+@grey-bor6 : @grey6;
+@grey-bor7 : @grey7;
+@grey-bor8 : @grey8;
+@grey-bor9 : @grey9;
+@grey-bor10 : @grey10;
+
+@grey-ico0 : @grey0;
+@grey-ico1: @grey1;
+@grey-ico2 : @grey2;
+@grey-ico3 : @grey3;
+@grey-ico4 : @grey4;
+@grey-ico5 : @grey5;
+@grey-ico6 : @grey6;
+@grey-ico7 : @grey7;
+@grey-ico8 : @grey8;
+@grey-ico9 : @grey9;
+@grey-ico10 : @grey10;
+
+@blue-bg : hsla(@blue-h,@blue-s,@blue-l,@blue-a);
+@blue-txt : hsla(@blue-h,@blue-s,@blue-l,@blue-a);
+@blue-bor : hsla(@blue-h,@blue-s,@blue-l,@blue-a);
+@blue-ico : hsla(@blue-h,@blue-s,@blue-l,@blue-a);
+
+@red-bg : hsla(@red-h,@red-s,@red-l,@red-a);
+@red-txt : hsla(@red-h,@red-s,@red-l,@red-a);
+@red-bor : hsla(@red-h,@red-s,@red-l,@red-a);
+@red-ico : hsla(@red-h,@red-s,@red-l,@red-a);
+
+@yellow-bg : hsla(@yellow-h,@yellow-s,@yellow-l,@yellow-a);
+@yellow-txt : hsla(@yellow-h,@yellow-s,@yellow-l,@yellow-a);
+@yellow-bor : hsla(@yellow-h,@yellow-s,@yellow-l,@yellow-a);
+@yellow-ico : hsla(@yellow-h,@yellow-s,@yellow-l,@yellow-a);
+
+@green-bg : hsla(@green-h,@green-s,@green-l,@green-a);
+@green-txt : hsla(@green-h,@green-s,@green-l,@green-a);
+@green-bor : hsla(@green-h,@green-s,@green-l,@green-a);
+@green-ico : hsla(@green-h,@green-s,@green-l,@green-a);
+
+@orange-bg : hsla(@orange-h,@orange-s,@orange-l,@orange-a);
+@orange-txt : hsla(@orange-h,@orange-s,@orange-l,@orange-a);
+@orange-bor : hsla(@orange-h,@orange-s,@orange-l,@orange-a);
+@orange-ico : hsla(@orange-h,@orange-s,@orange-l,@orange-a);
+
+@white-bg1 : @white1;
+@white-bg2 : @white2;
+@white-bg3 : @white3;
+@white-bg4 : @white4;
+
+@white-bor1 : @white1;
+@white-bor2 : @white2;
+@white-bor3 : @white3;
+@white-bor4 : @white4;
+
+@white-txt1 : @white1;
+@white-txt2 : @white2;
+@white-txt3 : @white3;
+@white-txt4 : @white4;
+
+@white-ico1 : @white1;
+@white-ico2 : @white2;
+@white-ico3 : @white3;
+@white-ico4 : @white4;
+
+@black-bg1 : @black1;
+@black-bg2 : @black2;
+@black-bg3 : @black3;
+@black-bg4 : @black4;
+
+@black-bor1 : @black1;
+@black-bor2 : @black2;
+@black-bor3 : @black3;
+@black-bor4 : @black4;
+
+@black-txt1 : @black1;
+@black-txt2 : @black2;
+@black-txt3 : @black3;
+@black-txt4 : @black4;
+
+@black-ico1 : @black1;
+@black-ico2 : @black2;
+@black-ico3 : @black3;
+@black-ico4 : @black4;
+
+/*---- primary color ----*/
+@accentcolor:var(--accent-color);
+@accent-theme : hsl(var(--accent-h),var(--accent-s),var(--accent-l),var(--accent-a));
+
+@accentcolor-light1:var(--accent-color-light1);
+@accentcolor-light2:var(--accent-color-light2);
+@accentcolor-dark1:var(--accent-color-dark1);
+
+/*---- primary color ----*/
+
+/*---- variables ----*/
+
+@z-font-w100:100;
+@z-font-w300:300;
+@z-font-w400:400;
+@z-font-w500:500;
+@z-font-w600:600;
+@z-font-w700:700;
+@z-font-w900:900;

@@ -1,0 +1,157 @@
+:where(.@{pre}-rounded){
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: @grey-bg5;
+    color: @grey-txt0;
+    font-weight:@z-font-w600;
+    border-radius: 100%;
+
+    img{
+        max-width: 100%;
+        max-height:100%;
+        border-radius:100%;
+        flex-shrink:0;
+    }
+    .@{pre}-status{
+        position:absolute;
+        border:2px solid @grey-bor10;
+        top:0;
+        right:0;
+    }
+}
+.@{pre}-status{
+    &\:tr{
+        &.@{pre}-rounded{
+            &\:24{
+                .@{pre}-status{
+                    top:-3px;
+                    right:-2px;
+                }
+            }
+            &\:32{
+                .@{pre}-status{
+                    top:-2px;
+                    right:0px;
+                }
+            }
+            &\:40{
+                .@{pre}-status{
+                    top:0px;
+                    right:0px;
+                }
+            }
+            &\:48{
+                .@{pre}-status{
+                    top:1px;
+                    right:1px;
+                }
+            }
+            &\:56{
+                .@{pre}-status{
+                    top:1px;
+                    right:4px;
+                }
+            }
+        }
+    }
+    &\:br{
+        &.@{pre}-rounded{
+            &\:24{
+                .@{pre}-status{
+                    bottom:-3px;
+                    right:-2px;
+                    top:auto;
+                }
+            }
+            &\:32{
+                .@{pre}-status{
+                    bottom:-2px;
+                    right:0px;
+                    top:auto;
+                }
+            }
+            &\:40{
+                .@{pre}-status{
+                    bottom:0px;
+                    right:0px;
+                    top:auto;
+                }
+            }
+            &\:48{
+                .@{pre}-status{
+                    bottom:1px;
+                    right:1px;
+                    top:auto;
+                }
+            }
+            &\:56{
+                .@{pre}-status{
+                    bottom:1px;
+                    right:4px;
+                    top:auto;
+                }
+            }
+        }
+    }
+    
+}
+:where(.@{pre}-rounded\:small){
+    width:26px;
+    height:26px;
+}
+:where(.@{pre}-rounded\:outline){
+    outline: 2px solid @grey-bor4;
+    outline-offset: 3px;
+}
+:where(.@{pre}-tooltip-txt){
+    visibility: hidden;
+    position: absolute;
+    background-color: @grey-bg0;
+    bottom: 52px;
+    left: -18px;
+    padding:0;
+    border-radius: 5px;
+    color: @grey-txt10;
+
+    &:before{
+        content: "";
+        position: absolute;
+        border: 5px solid;
+        top:100%;
+        left: 45%;
+        border-color: @grey-bor0 transparent transparent transparent;
+    }
+}
+.@{pre}-tooltip-container{
+    > * > img:hover{
+        & ~ .@{pre}-tooltip-txt{
+            visibility: visible;
+            padding: 6px 13px;
+            transition: padding 0.3s;
+        }
+    }
+}
+:where(.@{pre}-rounded\:group){
+    display: flex;
+    align-items: center;
+
+    > * + *{
+        margin-left:-14px;
+        
+        > *{
+            outline:2px solid @grey-bor10;
+        }
+    }
+}
+:where(.@{pre}-meta-data){
+    .@{pre}-data-added{
+        display: block;
+        font-size:1.4rem;
+        font-weight:@z-font-w600;
+        color:@grey-txt2;
+        padding-top:5px;
+    }
+}

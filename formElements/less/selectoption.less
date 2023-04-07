@@ -1,0 +1,70 @@
+:where(.@{pre}-selectbox){
+    min-width:200px;
+    padding:8px;
+    border-radius: 4px;
+    border:1px solid @grey4;
+    color: @grey-txt1;
+    background-color: @grey-bg10;
+    user-select: none;
+    cursor: pointer;
+    
+    &.@{pre}-select\:default{
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='hsl(227,10%,55%)' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19.5 8.25l-7.5 7.5-7.5-7.5' /%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 14px;
+        background-position: calc(100% - 6px) center;
+
+        &:not(:only-child){
+            box-shadow:none;
+
+            &:focus{
+                outline:none;
+            }
+        }
+    }
+
+    &:focus{
+        border-color: transparent;
+        outline: 2px solid var(--accent-color);
+        outline-offset: -1px;
+        border-radius: 3px;
+    }
+    &.@{pre}-open{
+        & + .@{pre}-dropdown{
+            .@{pre}-loop\:list{
+                .@{pre}-active-option{
+                    background-color:@grey-bg6;
+                    background-image:url("data:image/svg+xml,%3Csvg stroke-width='2.5' viewBox='-4 -4 32 32' xmlns='http://www.w3.org/2000/svg' aria-toggle-input='true'%3E%3Cpath fill='none' stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7'%3E%3C/path%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    background-position:right;
+                }
+                &.@{z}-bg\[child\]-hover{
+                    &\:accent{
+                        .@{pre}-active-option{
+                            background-color:@accentcolor;
+                            color:@white-txt1;
+
+                            &::after{
+                                border-left: 2px solid @white-bor1;
+                                border-bottom: 2px solid @white-bor1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.@{pre}-status{
+    width: 6px;
+    height: 6px;
+    background-color:@grey-bg3;
+    border-radius: 100%;
+
+    &\:online{
+        @green-s : 78%;
+        @green-l : 41%;
+
+        background-color:@green-txt;
+    }
+}

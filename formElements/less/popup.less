@@ -1,0 +1,109 @@
+:where(.@{pre}-popup-container){
+    position:absolute;
+    display:flex;
+    width:100%;
+    height:100%;
+    background-color:hsla(226,41%,8%,0.6);
+    overflow-y:auto;
+    padding:25px;
+    box-sizing:border-box;
+    top:0;
+    left:0;
+
+    .@{pre}-popup-subcontainer{
+        margin:auto;
+        text-align:right;
+
+        .@{pre}-closebtn{
+            position:absolute;
+            margin-top: 16px;
+            margin-left: -37px;
+            z-index: 1;
+        }
+        .@{pre}-close-pos{
+            &\:out{
+                &-l,&-r{
+                    position:fixed;
+                    padding: 6px;
+                    background-color: var(--grey3);
+                    border-radius: 100%;
+                    
+                    .@{z}-ico{
+                        stroke:@white-ico1;
+                    }
+                }
+                &-l{
+                    left: auto;
+                    margin-left: -45px;
+                    margin-top: 0;
+                }
+                &-r{
+                    right:auto;
+                    margin-left: 14px;
+                    margin-top: 0;
+                }
+            }
+        }
+        .@{pre}-close-pos{
+            &\:out{
+                &-l:hover,&-r:hover{
+                    background-color:@grey-bg2;
+                }
+            }
+            &\:sticky{
+                &-l{
+                    background-color:@grey-bg10;
+                    right:auto;
+                    top:auto;
+                    margin-left: -31px;
+
+                    &::before{
+                        background-color:@grey-bg10;
+                        background-image: radial-gradient(circle 10px at 0 0,hsla(226,41%,8%,0.6) 9px, transparent 7px);
+                    }
+                    &::after{
+                        background-color:@grey-bg10;
+                        background-image: radial-gradient(circle 10px at 0px 10px,hsla(226,41%,8%,0.6) 9px,black 6px , transparent 7px);
+                    }
+                }
+                &-r{
+                    background-color:@grey-bg10;
+                    left:auto;
+                    top:auto;
+                    margin-left:0px;
+
+                    &::before{
+                        background-color:@grey-bg10;
+                        background-image:radial-gradient(circle 10px at 10px -1px,hsla(226,41%,8%,0.6) 10px, transparent 6px);
+                    }
+                    &::after{
+                        background-color:@grey-bg10;
+                        background-image:radial-gradient(circle 10px at 10px 10px,hsla(226,41%,8%,0.6) 9px, black 8px, transparent 7px);
+                    } 
+                }
+            }
+        }
+        .@{pre}-popup{
+            position:relative;
+            display:flex;
+            flex-direction:column;
+            border-radius:5px;
+            background-color:@grey-bg10;
+            
+    
+            .@{pre}-header{
+                display:flex;
+                align-items:center;
+                justify-content:space-between;
+            }
+            .@{pre}-data{
+                text-align:justify;
+            }
+            .@{pre}-footer{
+                display:flex;
+                align-items:center;
+                gap:10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="z-list-gap:25">
+        <div class="zln-component">
+            <div class="zln-title z-mar-b:10">Slide over with form example</div>
+            <div class="z-dis:flex z-height[max]:700 z-bor:1 z-bor-style:solid z-bor-c:grey5 z-bor-radius:5 z-overflow:hidden">
+                <div class="zln-contentpage z-flex:grow"></div>
+                <div class="zln-slideover zln-show z-bor-l:1 z-bor-style:solid z-bor-c:grey5 z-width-mr:500">
+                    <div class="zln-header-container z-bor-b:1 z-bor-style:solid z-bor-c:grey5">
+                        <div class="zln-header">
+                            <div class="zln-title">New Project</div>
+                            <button class="reset:btn zln-item[hover]">
+                                <svg viewBox="0 0 24 24" class="z-ico" width="22" height="22">
+                                    <use xlink:href="#o-ico-x-mark"></use>
+                                </svg>
+                            </button> 
+                        </div>
+                        <span class="zln-description">Get started by filling in the information below to create your new project.</span>
+                    </div>
+                    <ul class="zln-slideover-body reset:ul z-list-gap:25">
+                        <li>
+                            <div class="zln-meta-title z-pad-b:12">Project name</div>
+                            <input type="text" size="30" class="z-input:text z-width[%]:100">
+                        </li>
+                        <li>
+                            <div class="zln-meta-title z-pad-b:12">Description</div>
+                            <textarea rows="5" class="zln-textarea z-type:default z-width[%]:100"></textarea>
+                        </li>
+                        <li>
+                            <div class="zln-meta-title z-pad-b:12">Team Members</div>
+                            <ul class="reset:ul z-dis:flex z-gap:10">
+                                <li>
+                                    <img src="../images/profile1.jpg" alt="avatar" width="56" height="56" class="zln-rounded zln-rounded:32"/>
+                                </li>                                    
+                                <li>
+                                    <img src="../images/profile2.jpg" alt="avatar" width="56" height="56" class="zln-rounded zln-rounded:32"/>
+                                </li>                                    
+                                <li>
+                                    <img src="../images/profile3.jpg" alt="avatar" width="56" height="56" class="zln-rounded zln-rounded:32"/>
+                                </li>                                    
+                                <li>
+                                    <img src="../images/profile4.jpeg" alt="avatar" width="56" height="56" class="zln-rounded zln-rounded:32"/>
+                                </li>                                    
+                                <li>
+                                    <img src="../images/profile5.jpeg" alt="avatar" width="56" height="56" class="zln-rounded zln-rounded:32"/>
+                                </li>
+                                <li>
+                                    <button class="reset:btn zln-rounded zln-rounded:32 z-bor:2 z-bor-style:dashed z-bor-c:grey4">
+                                        <svg viewBox="0 0 24 24" class="z-ico" width="18" height="18">
+                                            <use xlink:href="#o-ico-plus"></use>
+                                        </svg>
+                                    </button>
+                                </li>                                    
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="zln-meta-title">Privacy</div>
+                            <ul class="reset:ul z-pad[child]-lr:0 z-pad[child]-tb:15">
+                                <li>
+                                    <label class="zln-select-option">
+                                        <input type="radio" name="privacy" class="z-input:radio" checked />
+                                        <span class="z-dis:flex-col">
+                                            <span class="zln-meta-title z-pad-b:5">Public access</span>
+                                            <span class="z-txt:grey2">Everyone with the link will see this project.</span>
+                                        </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="zln-select-option">
+                                        <input type="radio" name="privacy" class="z-input:radio" />
+                                        <span class="z-dis:flex-col">
+                                            <span class="zln-meta-title z-pad-b:5">Private to project members</span>
+                                            <span class="z-txt:grey2">Only members of this project would be able to access.</span>
+                                        </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="zln-select-option">
+                                        <input type="radio" name="privacy" class="z-input:radio" />
+                                        <span class="z-dis:flex-col">
+                                            <span class="zln-meta-title z-pad-b:5">Public access</span>
+                                            <span class="z-txt:grey2">Everyone with the link will see this project.</span>
+                                        </span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="zln-copylink">
+                                <svg viewBox="0 0 24 24" class="z-ico" width="18" height="18">
+                                    <use xlink:href="#o-ico-link"></use>
+                                </svg> 
+                                <span class="zln-data">Copy link</span>
+                            </div>
+                            <div class="zln-about">
+                                <svg viewBox="0 0 24 24" class="z-ico" width="18" height="18">
+                                    <use xlink:href="#f-ico-question-mark-circle"></use>
+                                </svg> 
+                                <span class="zln-data">Learn more about sharing</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="zln-footer z-bor-t:1 z-bor-style:solid z-bor-c:grey5">
+                        <button class="z-btn z-btn:outline z-bor-c:grey4 z-txt:grey0 z-bg-hover:grey7">Cancel</button>
+                        <button class="z-btn">Create</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zln-component">
+            <div class="zln-title z-mar-b:10">Slide over with user profile</div>
+            <div class="z-dis:flex z-pos:re z-bor:1 z-bor-style:solid z-bor-c:grey5 z-bor-radius:5 z-overflow:hidden">
+                <div class="z-flex:grow"></div>
+                <div class="zln-slideover zln-show z-bor-l:1 z-bor-style:solid z-bor-c:grey5 z-width-mr:500">
+                    <div class="zln-header-container">
+                        <div class="zln-header">
+                            <div class="zln-title">Profile</div>
+                            <button class="reset:btn zln-item[hover]">
+                                <svg viewBox="0 0 24 24" class="z-ico" width="22" height="22">
+                                    <use xlink:href="#o-ico-x-mark"></use>
+                                </svg>
+                            </button> 
+                        </div>
+                    </div>
+                    <div class="zln-profile">
+                        <div class="zln-profile-image"></div>
+                        <div class="zln-profile-info">
+                            <div class="zln-metadata">
+                                <div class="zln-data-container">
+                                    <div class="zln-data-title">Francis Xavier</div>
+                                    <div class="zln-status zln-status:online"></div>
+                                </div>
+                                <a href="#" class="zln-mention">@francisxavier</a>
+                            </div>
+                            <div class="zln-btn-container">
+                                <button class="z-btn z-flex:grow z-font-s:15">Message</button>
+                                <button class="z-btn z-flex:grow z-font-s:15 z-btn:outline z-bor-c:grey4 z-txt:grey0 z-bg-hover:grey7">Call</button>
+                                <button class="z-btn z-btn:outline z-bor-c:grey4 z-txt:grey0 z-bg-hover:grey7 z-pad-lr:6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico z-downarrow-ico" width="25" height="25">
+                                        <use xlink:href="#o-ico-ellipsis-vertical"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul class="zln-info reset:ul z-list-gap:25 z-pad-t:25">
+                                <li>
+                                    <div class="zln-meta-title z-pad-b:5">Bio</div>
+                                    <span class="zln-meta-data z-font-s:14">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto nam tempora consequuntur modi architecto, facilis tenetur ducimus odit ut temporibus voluptatem ad fuga debitis vero sapiente, quasi eligendi? Itaque, magni!</span>
+                                </li>
+                                <li>
+                                    <div class="zln-meta-title z-pad-b:5">Location</div>
+                                    <span class="zln-meta-data z-font-s:14">New York, NY, USA</span>
+                                </li>
+                                <li>
+                                    <div class="zln-meta-title z-pad-b:5">Website</div>
+                                    <span class="zln-meta-data z-font-s:14">francisxavier.com</span>
+                                </li>
+                                <li>
+                                    <div class="zln-meta-title z-pad-b:5">Birthday</div>
+                                    <span class="zln-meta-data z-font-s:14">February 24, 2000</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
